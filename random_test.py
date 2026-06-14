@@ -8,11 +8,9 @@ Param = {
     "Waifu": "Rem",
 
 }
-dict = {}
+list = [ ]
 for _ in range(4):
-    Name = input("What is your name? ")
-    Language = input("What is your favorite programming language? ")
-    dict.update({Name: Language})
-
-
-print(dict, type(dict))
+    num = int(input("Enter a number: "))
+    list.append(num)
+list.sort(reverse=True)
+print(list[0])
