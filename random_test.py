@@ -8,25 +8,3 @@ Param = {
     "Waifu": "Rem",
 
 }
-sub = int(input("Enter the number of subjects: "))
-mps = int(input("Enter the marks per subject: "))
-marks = { }
-for i in range(sub):
-    num = int(input("Enter a number: "))
-    marks[i] = num
-total_marks_obtained = sum(marks.values())
-total_marks = sub * mps
-percentage = (total_marks_obtained / total_marks) * 100
-percentage_per_subject = []
-for i in range(sub):
-    value = marks[i]
-    percentage_per_subject.append((value / mps) * 100)
-p = 0
-while p == 0  :
-    for i in range(sub):
-        if percentage_per_subject[i] < 33:
-            print(f"Subject {i} is failed with {percentage_per_subject[i]}%")
-            p += 1
-percentage_per_subject.sort(reverse=True)
-print(f"Highest Subject Percentage: {percentage_per_subject[0]}%")
-print(f"Total Percentage: {percentage}%")
