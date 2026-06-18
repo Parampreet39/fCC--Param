@@ -20,4 +20,4 @@ This repository tracks my journey through the **Scientific Computing with Python
 
 ---
 **Main Profile:** [Parampreet39](https://github.com/Parampreet39) | **Goal:** IoT & Mechanical Engineering @ Japan 🇯🇵
-Documentation structured with AI assistance | Curated by Param Preet Singh
+Documentation structured with AI  | Curated by Param Preet Singh
