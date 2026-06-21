@@ -58,3 +58,7 @@ def is_palindrome_V2(a):
     else:
         return False
 print(is_palindrome_V2("70107"))
+
+"""
+Goal: Count how many times a target item appears in an array.
+"""
