@@ -25,3 +25,36 @@ def power(a, b):
         return 1  
     return a*power(a,b-1)
 print(power(2,0))
+
+"""
+Goal: Turn a string backward by taking the first letter and gluing it to the end of the rest of the reversed
+"""
+def reverse(a):
+    if len(str(a)) == 1:
+        return a
+    b = a[:-1] 
+    ans = a[-1] + reverse(b)
+    return ans
+print(reverse("Param"))
+
+"""
+Goal: Determine if a word reads the same backward and forward.
+"""
+def is_palindrome_V1(a):
+    a == str(a)
+    if  a == len(a):
+        return True
+    if reverse(a) == a:
+        return True
+    else :
+        return False
+def is_palindrome_V2(a):
+    a == str(a)
+    if  1 == len(a) or 0 == len(a):
+        return True
+    b = a[1:-1]
+    if a[0] == a[-1] and is_palindrome_V2(b):
+        return True
+    else:
+        return False
+print(is_palindrome_V2("70107"))
