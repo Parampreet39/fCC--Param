@@ -57,8 +57,28 @@ def is_palindrome_V2(a):
         return True
     else:
         return False
-print(is_palindrome_V2("70107"))
 
 """
 Goal: Count how many times a target item appears in an array.
 """
+
+"""
+Goal: Find the n-th Fibonacci number, where each number is the sum of the two preceding ones.
+"""
+def fib(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+"""
+Goal: You are climbing a staircase with n steps. You can climb 1 or 2 steps at a time. In how many distinct ways can you climb to the top?
+"""
+def stairs(n):
+    if n==0:
+        return 1
+    if n==1:
+        return 1
+    return stairs(n-1) + stairs(n-2)
+print(stairs(40))
