@@ -1,5 +1,4 @@
 import random
-# Swap the numbers to fix the math matrix
 vals = {
     "Snake": 1,
     "Water": 3,
